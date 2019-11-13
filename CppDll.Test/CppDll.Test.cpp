@@ -16,6 +16,7 @@ namespace CppDllTest
 			LPWSTR s = (LPWSTR)malloc(20);
 			WriteString(s);
 			Assert::AreEqual(s, L"a string");
+			free(s);
 		}
 	};
 }
