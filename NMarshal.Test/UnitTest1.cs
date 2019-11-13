@@ -8,7 +8,9 @@ namespace NMarshal.Test
 {
     public class NativeMethods
     {
-        [DllImport("CppDll.dll")]
+        public const string CPP_DLL = "../../../CppDll/bin/Debug/CppDll.dll";
+
+        [DllImport(CPP_DLL)]
         public static extern void WriteString([MarshalAs(UnmanagedType.LPWStr)]StringBuilder lpwstr);
     }
 
