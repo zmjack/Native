@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.md = LICENSE.md
 		NMarshal\NMarshal.nuspec = NMarshal\NMarshal.nuspec
-		NMarshal\NugetPack.cmd = NMarshal\NugetPack.cmd
+		NMarshal\NMarshalPack.cmd = NMarshal\NMarshalPack.cmd
 	EndProjectSection
 EndProject
 Global
