@@ -11,7 +11,7 @@ extern "C" __declspec(dllexport) LPWSTR __stdcall CreateString()
 
 extern "C" __declspec(dllexport) void __stdcall WriteString(LPWSTR lpwstr)
 {
-	wcscpy_s((wchar_t*)lpwstr, 20, L"a string");
+	lstrcpy(lpwstr, L"a string");
 }
 
 extern "C" __declspec(dllexport) void __stdcall FreeString(LPWSTR lpwstr)

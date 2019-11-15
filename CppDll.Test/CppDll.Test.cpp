@@ -13,10 +13,10 @@ namespace CppDllTest
 
 		TEST_METHOD(TestMethod1)
 		{
-			LPWSTR s = (LPWSTR)malloc(20);
-			WriteString(s);
-			Assert::AreEqual(s, L"a string");
-			free(s);
+			LPWSTR pstr = (LPWSTR)malloc(sizeof(WCHAR) * 10);
+			WriteString(pstr);
+			Assert::AreEqual(L"a string", pstr);
+			free(pstr);
 		}
 	};
 }
