@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("NMarshal")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Provide some classes for P/Invoke, such as automatic pointers, to make it easier to use P/Invoke.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("dawnx.net")]
 [assembly: AssemblyProduct("NMarshal")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright © dawnx.net 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
