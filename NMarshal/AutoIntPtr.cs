@@ -3,7 +3,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace NWin32
+namespace NMarshal
 {
     public class AutoIntPtr<T> : IDisposable
     {

@@ -1,7 +1,0 @@
-﻿[*.cs]
-
-# CA2101: Specify marshaling for P/Invoke string arguments
-dotnet_diagnostic.CA2101.severity = silent
-
-# CA1401: P/Invokes should not be visible
-dotnet_diagnostic.CA1401.severity = silent
