@@ -12,6 +12,7 @@
     <Version>0.0.2</Version>
     <Company>dawnx.net</Company>
     <Copyright>Copyright © dawnx.net 2019-2020</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
