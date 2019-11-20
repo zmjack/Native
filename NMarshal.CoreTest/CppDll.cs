@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Text;
 
-namespace NMarshal.Test
+namespace NMarshal.CoreTest
 {
     public static class CppDll
     {
