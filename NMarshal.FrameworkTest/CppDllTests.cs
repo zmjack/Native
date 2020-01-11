@@ -4,7 +4,7 @@ using static NMarshal.FrameworkTest.CppDll.NativeMethods;
 namespace NMarshal.FrameworkTest
 {
     [TestClass]
-    public class UnitTest1
+    public class CppDllTests
     {
         [TestMethod]
         public void TestMethod1()

@@ -3,7 +3,7 @@ using static NMarshal.CoreTest.CppDll.NativeMethods;
 
 namespace NMarshal.CoreTest
 {
-    public class UnitTest1
+    public class CppDllTests
     {
         [Fact]
         public void TestMethod1()
