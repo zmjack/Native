@@ -1,5 +1,5 @@
-# NStandard
+# NMarshal
 
-DotNet Core extensions for system library.
+NMarshal provide some classes for P/Invoke, such as automatic pointers, to make it easier to use P/Invoke.
 
 
