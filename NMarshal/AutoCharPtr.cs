@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace NMarshal
+namespace Native
 {
     public class AutoCharPtr : IDisposable
     {

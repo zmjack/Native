@@ -1,10 +1,10 @@
-﻿using NStandard;
+﻿using Native.external.NStandard;
 using System;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace NMarshal
+namespace Native
 {
     public class AutoIntPtr<T> : IDisposable
     {

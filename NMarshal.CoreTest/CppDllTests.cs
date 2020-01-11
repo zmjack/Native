@@ -1,7 +1,7 @@
 ﻿using Xunit;
-using static NMarshal.CoreTest.CppDll.NativeMethods;
+using static Native.CoreTest.CppDll.NativeMethods;
 
-namespace NMarshal.CoreTest
+namespace Native.CoreTest
 {
     public class CppDllTests
     {

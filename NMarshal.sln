@@ -14,11 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMarshal", "NMarshal\NMarshal.csproj", "{4C10EAD3-9129-4A41-A299-3AFA2772F736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native", "NMarshal\Native.csproj", "{4C10EAD3-9129-4A41-A299-3AFA2772F736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMarshal.FrameworkTest", "NMarshal.FrameworkTest\NMarshal.FrameworkTest.csproj", "{25900156-4BB5-4710-9509-8E7B56487441}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Native.FrameworkTest", "NMarshal.FrameworkTest\Native.FrameworkTest.csproj", "{25900156-4BB5-4710-9509-8E7B56487441}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMarshal.CoreTest", "NMarshal.CoreTest\NMarshal.CoreTest.csproj", "{3D2977B7-B391-446D-845A-A941BFD44C5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native.CoreTest", "NMarshal.CoreTest\Native.CoreTest.csproj", "{3D2977B7-B391-446D-845A-A941BFD44C5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native.Cli", "PISharp.Cli\Native.Cli.csproj", "{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +88,18 @@ Global
 		{3D2977B7-B391-446D-845A-A941BFD44C5A}.Release|x64.Build.0 = Release|Any CPU
 		{3D2977B7-B391-446D-845A-A941BFD44C5A}.Release|x86.ActiveCfg = Release|Any CPU
 		{3D2977B7-B391-446D-845A-A941BFD44C5A}.Release|x86.Build.0 = Release|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Debug|x64.Build.0 = Debug|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Debug|x86.Build.0 = Debug|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Release|x64.ActiveCfg = Release|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Release|x64.Build.0 = Release|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Release|x86.ActiveCfg = Release|Any CPU
+		{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

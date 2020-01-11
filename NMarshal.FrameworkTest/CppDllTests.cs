@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using static NMarshal.FrameworkTest.CppDll.NativeMethods;
+using static Native.FrameworkTest.CppDll.NativeMethods;
 
-namespace NMarshal.FrameworkTest
+namespace Native.FrameworkTest
 {
     [TestClass]
     public class CppDllTests

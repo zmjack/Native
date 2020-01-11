@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net35</TargetFrameworks>
+    <Description>Provide some classes for P/Invoke, such as automatic pointers, to make it easier to use P/Invoke.</Description>
+    <Authors>zmjack</Authors>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/zmjack/NMarshal</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zmjack/NMarshal</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>P/Invoke Marshal</PackageTags>
+    <Version>0.0.4</Version>
+    <Company>dawnx.net</Company>
+    <Copyright>Copyright © dawnx.net 2019-2020</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
