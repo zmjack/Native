@@ -20,5 +20,7 @@ namespace NMarshal
             return @this.Ptr;
         }
 
+        public override string ToString() => Value;
+
     }
 }
