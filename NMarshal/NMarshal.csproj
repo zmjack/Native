@@ -9,7 +9,7 @@
     <RepositoryUrl>https://github.com/zmjack/NMarshal</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>P/Invoke Marshal</PackageTags>
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <Company>dawnx.net</Company>
     <Copyright>Copyright © dawnx.net 2019-2020</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

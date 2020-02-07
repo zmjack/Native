@@ -110,5 +110,7 @@ namespace NMarshal
             }
         }
 
+        public override string ToString() => Value.ToString();
+
     }
 }
