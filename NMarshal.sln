@@ -17,8 +17,14 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMarshal", "NMarshal\NMarshal.csproj", "{4C10EAD3-9129-4A41-A299-3AFA2772F736}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMarshal.FrameworkTest", "NMarshal.FrameworkTest\NMarshal.FrameworkTest.csproj", "{25900156-4BB5-4710-9509-8E7B56487441}"
+	ProjectSection(ProjectDependencies) = postProject
+		{819E6437-0B18-4AD2-B1D9-24B38B4040BC} = {819E6437-0B18-4AD2-B1D9-24B38B4040BC}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMarshal.CoreTest", "NMarshal.CoreTest\NMarshal.CoreTest.csproj", "{3D2977B7-B391-446D-845A-A941BFD44C5A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{819E6437-0B18-4AD2-B1D9-24B38B4040BC} = {819E6437-0B18-4AD2-B1D9-24B38B4040BC}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,7 +36,7 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{819E6437-0B18-4AD2-B1D9-24B38B4040BC}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{819E6437-0B18-4AD2-B1D9-24B38B4040BC}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{819E6437-0B18-4AD2-B1D9-24B38B4040BC}.Debug|x64.ActiveCfg = Debug|x64
 		{819E6437-0B18-4AD2-B1D9-24B38B4040BC}.Debug|x64.Build.0 = Debug|x64
 		{819E6437-0B18-4AD2-B1D9-24B38B4040BC}.Debug|x86.ActiveCfg = Debug|Win32
@@ -40,7 +46,7 @@ Global
 		{819E6437-0B18-4AD2-B1D9-24B38B4040BC}.Release|x64.Build.0 = Release|x64
 		{819E6437-0B18-4AD2-B1D9-24B38B4040BC}.Release|x86.ActiveCfg = Release|Win32
 		{819E6437-0B18-4AD2-B1D9-24B38B4040BC}.Release|x86.Build.0 = Release|Win32
-		{ACAE29EE-E6EA-42A4-9B41-D81BB6A6499E}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{ACAE29EE-E6EA-42A4-9B41-D81BB6A6499E}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{ACAE29EE-E6EA-42A4-9B41-D81BB6A6499E}.Debug|x64.ActiveCfg = Debug|x64
 		{ACAE29EE-E6EA-42A4-9B41-D81BB6A6499E}.Debug|x64.Build.0 = Debug|x64
 		{ACAE29EE-E6EA-42A4-9B41-D81BB6A6499E}.Debug|x86.ActiveCfg = Debug|Win32

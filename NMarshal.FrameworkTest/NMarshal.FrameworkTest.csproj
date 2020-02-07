@@ -30,7 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>8.0</LangVersion>
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -75,4 +75,12 @@
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets'))" />
   </Target>
   <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" />
+  <Target Name="PostBuild" BeforeTargets="PostBuildEvent">
+    <ItemGroup>
+      <CopyFile Include="$(SolutionDir)$(Configuration)/CppDll.dll" Condition="'$(Platform)' != 'x64'"></CopyFile>
+      <CopyFile Include="$(SolutionDir)x64/$(Configuration)/CppDll.dll" Condition="'$(Platform)' == 'x64'"></CopyFile>
+    </ItemGroup>
+    <Copy SourceFiles="@(CopyFile)" DestinationFolder="$(OutDir)">
+    </Copy>
+  </Target>
 </Project>
