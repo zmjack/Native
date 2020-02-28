@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NStandard
+namespace NMarshal._extern.NStandard
 {
     public static class XObject
     {
