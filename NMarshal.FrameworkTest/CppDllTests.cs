@@ -11,7 +11,7 @@ namespace NMarshal.FrameworkTest
         {
             using var pstr = new AutoCharPtr(10);
             WriteString(pstr);
-            Assert.AreEqual("a string", pstr.Value);
+            Assert.AreEqual("A string", pstr.Value);
         }
 
     }
