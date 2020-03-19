@@ -10,7 +10,7 @@ namespace Native.CoreTest
         {
             using var pstr = new AutoCharPtr(10);
             WriteString(pstr);
-            Assert.Equal("a string", pstr.Value);
+            Assert.Equal("string...", pstr.Value);
         }
 
     }

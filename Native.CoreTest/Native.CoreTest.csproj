@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NMarshal\Native.csproj" />
+    <ProjectReference Include="..\Native\Native.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" BeforeTargets="PostBuildEvent">

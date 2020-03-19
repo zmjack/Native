@@ -11,7 +11,7 @@ namespace Native.FrameworkTest
         {
             using var pstr = new AutoCharPtr(10);
             WriteString(pstr);
-            Assert.AreEqual("A string", pstr.Value);
+            Assert.AreEqual("string...", pstr.Value);
         }
 
     }

@@ -14,13 +14,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native", "NMarshal\Native.csproj", "{4C10EAD3-9129-4A41-A299-3AFA2772F736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native", "Native\Native.csproj", "{4C10EAD3-9129-4A41-A299-3AFA2772F736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Native.FrameworkTest", "NMarshal.FrameworkTest\Native.FrameworkTest.csproj", "{25900156-4BB5-4710-9509-8E7B56487441}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Native.FrameworkTest", "Native.FrameworkTest\Native.FrameworkTest.csproj", "{25900156-4BB5-4710-9509-8E7B56487441}"
+	ProjectSection(ProjectDependencies) = postProject
+		{819E6437-0B18-4AD2-B1D9-24B38B4040BC} = {819E6437-0B18-4AD2-B1D9-24B38B4040BC}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native.CoreTest", "NMarshal.CoreTest\Native.CoreTest.csproj", "{3D2977B7-B391-446D-845A-A941BFD44C5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native.CoreTest", "Native.CoreTest\Native.CoreTest.csproj", "{3D2977B7-B391-446D-845A-A941BFD44C5A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{819E6437-0B18-4AD2-B1D9-24B38B4040BC} = {819E6437-0B18-4AD2-B1D9-24B38B4040BC}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native.Cli", "PISharp.Cli\Native.Cli.csproj", "{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Native.Cli", "Native.Cli\Native.Cli.csproj", "{BE157D2A-B98B-40A3-8E2E-B4FFA695394C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
