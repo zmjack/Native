@@ -31,12 +31,12 @@
     <LangVersion>7.3</LangVersion>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
-    <DocumentationFile>D:\TeamProjects\Dawnx\Dawnx.Tools\dotnet-pi.xml</DocumentationFile>
+    <DocumentationFile>dotnet-pi.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <LangVersion>default</LangVersion>
-    <DocumentationFile>D:\TeamProjects\Native\PInvoke.Cli\dotnet-pi.xml</DocumentationFile>
+    <DocumentationFile>dotnet-pi.xml</DocumentationFile>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
 
