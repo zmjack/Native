@@ -6,6 +6,10 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     <PackageReference Include="NStandard" Version="0.2.0.2" />
@@ -17,5 +21,12 @@
   <ItemGroup>
     <ProjectReference Include="..\NMarshal\Native.csproj" />
   </ItemGroup>
+
+  <Target Name="PostBuild" BeforeTargets="PostBuildEvent">
+    <ItemGroup>
+      <CopyFile Include="$(SolutionDir)x64/$(Configuration)/CppDll.dll"></CopyFile>
+    </ItemGroup>
+    <Copy SourceFiles="@(CopyFile)" DestinationFolder="$(OutDir)"></Copy>
+  </Target>
 
 </Project>

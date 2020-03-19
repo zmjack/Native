@@ -7,9 +7,7 @@ namespace Native.CoreTest
     {
         public partial class NativeMethods
         {
-            public const string CPP_DLL = "../../../../x64/Debug/CppDll.dll";
-
-            [DllImport(CPP_DLL)]
+            [DllImport("CppDll.dll")]
             public static extern void WriteString([MarshalAs(UnmanagedType.LPWStr)]StringBuilder lpwstr);
         }
     }

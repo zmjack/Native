@@ -110,5 +110,7 @@ namespace Native
             }
         }
 
+        public override string ToString() => Value.ToString();
+
     }
 }

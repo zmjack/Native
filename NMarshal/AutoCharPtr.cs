@@ -20,5 +20,7 @@ namespace Native
             return @this.Ptr;
         }
 
+        public override string ToString() => Value;
+
     }
 }
