@@ -1,5 +1,5 @@
 ﻿using DotNetCli;
-using NEcho;
+using Ink;
 using NStandard;
 using System;
 using System.Reflection;
@@ -15,14 +15,13 @@ namespace PISharp.Cli
 
         static void Main(string[] args)
         {
-            CommandContainer = new CommandContainer(ProjectInfo.GetCurrent(), "pi");
+            CommandContainer = new CommandContainer("pi", ProjectInfo.GetCurrent());
             CommandContainer.CacheCommands(Assembly.GetExecutingAssembly());
 
             PrintWelcome();
 
-            var conArgs = new ConArgs(args, "-");
             CommandContainer.PrintProjectInfo();
-            CommandContainer.Run(conArgs);
+            CommandContainer.Run(args);
         }
 
         public static void PrintWelcome()
