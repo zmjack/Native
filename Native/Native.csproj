@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net35</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net35;net40;net45;net451;net46</TargetFrameworks>
     <Description>Provide some classes for P/Invoke, such as automatic pointers, to make it easier to use P/Invoke.</Description>
     <Authors>zmjack</Authors>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
@@ -22,5 +22,5 @@
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
-
+  
 </Project>
