@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 
 namespace Native
 {
-    public class AutoIntPtr<T> : IDisposable
+    public class AutoIntPtr<TValue> : IDisposable
     {
         public IntPtr Ptr { get; private set; }
         public int Length { get; private set; }
@@ -20,37 +20,38 @@ namespace Native
         {
             if (length < 0) throw new ArgumentOutOfRangeException($"The argument(`length`) must be greater than 0.");
 
-            ManagedType = typeof(T);
+            ManagedType = typeof(TValue);
             if (ManagedType.IsArray)
             {
                 Length = length;
                 ElementType = ManagedType.GetElementType();
                 ArrayBuffer = Array.CreateInstance(ElementType, length);
             }
-            else Length = Marshal.SizeOf(typeof(T));
+            else Length = Marshal.SizeOf(typeof(TValue));
 
             Ptr = Marshal.AllocHGlobal(Length);
         }
 
         public void Dispose() => Marshal.FreeHGlobal(Ptr);
 
-        [MethodImpl(MethodImplOptions.Synchronized)]
-        public static implicit operator IntPtr(AutoIntPtr<T> @this) => @this.Ptr;
+        public static implicit operator IntPtr(AutoIntPtr<TValue> @this) => @this.Ptr;
 
-        public T Value
+        public static implicit operator TValue(AutoIntPtr<TValue> @this) => @this.Value;
+
+        public TValue Value
         {
             [MethodImpl(MethodImplOptions.Synchronized)]
             get
             {
                 if (ManagedType.IsValueType)
-                    return (T)Marshal.PtrToStructure(Ptr, typeof(T));
+                    return (TValue)Marshal.PtrToStructure(Ptr, typeof(TValue));
                 else
                 {
                     if (ManagedType == typeof(byte[]))
                     {
                         var buffer = new byte[Length];
                         Marshal.Copy(Ptr, buffer, 0, buffer.Length);
-                        return (T)(object)buffer;
+                        return (TValue)(object)buffer;
                     }
                     else throw new NotSupportedException();
                 }
